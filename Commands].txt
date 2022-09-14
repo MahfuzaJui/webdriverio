@@ -1,0 +1,1 @@
+Run webdriverio file 			npx wdio run wdio.conf.js 
