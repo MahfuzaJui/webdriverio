@@ -31,6 +31,17 @@ class LoginPage extends Page {
         await this.btnSubmit.click();
     }
 
+
+    /**
+    * new selectors and methods for a specific page
+    */
+    get enableButton () {
+        return $('button[onclick="swapInput()"]');
+    }
+    get inputEnabledField (){
+        return $('//input[@type="text"]')
+    }
+
     /**
      * overwrite specific options to adapt it to page object
      */
